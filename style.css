@@ -1,0 +1,286 @@
+/* common styling */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.btn{
+    background-color: #E02C6D;
+    padding: 13px 25px;
+    color: white;
+    transition: transform .2s linear;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+/* --nav bar styleing-- */
+nav{
+    background-color: #2D25A0;
+}
+.nav-bar{
+    justify-content: space-between;
+    padding-top: 42px;
+    margin: 0 auto;
+
+}
+.nav-list ul{
+    display: flex;
+    padding: 0;
+}
+.nav-bar ul li {
+    list-style: none;
+    margin-right: 36px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.login{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.login span{
+    margin-left: 8px;
+}
+ /* ---banner start from here-- */
+ .banner{
+     background-color:#2D25A0 ;
+     padding: 50px 0;
+ }
+ .banner-content{
+     justify-content: space-between;
+ }
+ .banner-title {
+     width: 45%;
+     padding: 0;
+    }
+.banner-title h1{
+        color: white;
+        font-size: 60px;
+}
+.banner-image{
+    width: 50%;
+}
+.banner-image img{
+    width: 100%;
+    transition: 0.2s;
+}
+.football{
+    position: absolute;
+    width: 120px;
+    top: 35%;
+    right: 42%;
+    animation: image-dance 6s linear infinite;
+}
+@keyframes image-dance{
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ button{
+     border: none;
+ }
+
+ /* player section styling */
+ .players{
+     padding: 70px 0;
+ }
+ .player-list{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-row-gap: 30px;
+ }
+ .card{
+     margin-right: 30px;
+     padding: 15px;
+     box-shadow: 7px 0px 18px 4px #f1eaea;
+
+ }
+ .card img{
+     width: 100%;
+ }
+ .card h3{
+     font-size: 28px;
+     margin: 16px 0;
+ }
+
+ /* ----Highlight styleing---- */
+ .highlight{
+     justify-content: space-between;
+     padding: 70px 0;
+ }
+ .highlight-content{
+     width: 45%;
+ }
+ .highlight-content h1{
+    font-size: 48px;
+ }
+ .highlight-image{
+     width: 50%;
+ }
+ 
+ .highlight-image img{
+    width: 100%;
+}
+/* --qatar 2022 world cup styling */
+.qatar-world-cup{
+    background-color:#2D25A0 ;
+    color: white;
+    padding: 50px 0;
+}
+.qatar-2022{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+}
+.qatar-video iframe{
+    width: 600px;
+    height: 355px;
+}
+
+/* --partner styling-- */
+.fifa-partner h3{
+    text-align: center;
+    margin: 40px 0;
+}
+.partners{
+    display:grid ;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 33%;
+    grid-row-gap: 50px;
+}
+hr{
+    width: 90%;
+    text-align: center;
+    border: 1px solid gray;
+    margin: 30px;
+}
+
+/* footer style-- */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+}
+.footer-image{
+    text-align: center;
+}
+.footer-image img{
+    width:50%;
+}
+.social-media .fab{
+    background-color: rgb(188, 194, 200);
+    color: gray;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.footer-copyright{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+/* ----------------------
+    mobile css
+------------------------- */
+@media only screen and (max-width: 600px) {
+    nav{
+        display: none;
+    }
+    .container{
+        margin: 0 15px;
+    }
+    /* --banner responsive-- */
+    .banner-content{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+    .football{
+        top: 60%;
+        right: 74%;
+        width: 90px;
+    }
+    .banner-title{
+        width: 100%;
+    }
+    .banner-title h1{
+        font-size: 36px;
+    }
+    .banner-image{
+        width: 100%;
+        padding-top: 50px;
+    }
+/* ----player list resoponsive--- */
+    .player-list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;  
+        margin: auto;      
+
+    }
+    .card{
+        width: 90%;
+    }
+
+    /* ---highlight responsive--- */
+    .highlight{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        padding-top: 20px;
+    }
+    .highlight-content{
+        width: 100%;
+        margin: 0 15px;
+    }
+    .highlight-content h1{
+        font-size: 30px;
+    }
+    .highlight-image {
+        display: flex;
+        align-items: center;
+        padding-top:30px ;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    /* qatar-world-cup responsive */
+    .qatar-2022{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    
+    }
+
+    .qatar-video iframe{
+        width: 290px;
+        height: 200px;
+    }
+    /* ---FIFA partner section -- */
+    .partners{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer{
+        padding-top: 20px;
+    }
+  }
