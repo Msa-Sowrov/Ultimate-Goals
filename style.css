@@ -4,7 +4,9 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+p{
+    color: #6C6C6C;
+  }
 
 .container{
     display: flex;
@@ -115,6 +117,7 @@ nav{
      margin: 16px 0;
  }
 
+
  /* ----Highlight styleing---- */
  .highlight{
      justify-content: space-between;
@@ -149,7 +152,9 @@ nav{
     width: 600px;
     height: 355px;
 }
-
+.video-title p{
+    color: white;
+}
 /* --partner styling-- */
 .fifa-partner h3{
     text-align: center;
