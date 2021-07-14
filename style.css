@@ -7,13 +7,15 @@ body{
 p{
     color: #6C6C6C;
   }
-
+a{
+    text-decoration: none;
+}
 .container{
     display: flex;
     width: 80%;
     margin: 0 auto;
 }
-.btn{
+.btn {
     background-color: #E02C6D;
     padding: 13px 25px;
     color: white;
